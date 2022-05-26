@@ -12,5 +12,11 @@ namespace ManagePerson.Controllers
         [HttpPost(nameof(UpdateFamily))]
         public async Task<IActionResult> UpdateFamily(UpdateFamilyById command) => Ok(await Mediator.Send(command));
 
+        [HttpPost(nameof(UpdateGiven))]
+        public async Task<IActionResult> UpdateGiven(UpdateGivenById command) => Ok(await Mediator.Send(command));
+
+        [HttpPost(nameof(UpdateMobile))]
+        public async Task<IActionResult> UpdateMobile(UpdateMobileById command) => Ok(await Mediator.Send(command));
+
     }
 }

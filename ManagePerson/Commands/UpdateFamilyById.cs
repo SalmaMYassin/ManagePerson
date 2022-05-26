@@ -22,13 +22,13 @@ namespace ManagePerson.Commands
             public async Task<int> Handle(UpdateFamilyById command, CancellationToken cancellationToken)
             {
                 var sql = "Update dbo.HumanNames set Family = @Family Where PersonId = @PersonId";
-                    using (var connection = new SqlConnection(configuration.GetConnectionString("DefaultConnection")))
-                    {
-                        connection.Open();
-                        var result = await connection.ExecuteAsync(sql, command);
-                        return result;
-                    }
-                
+                using (var connection = new SqlConnection(configuration.GetConnectionString("DefaultConnection")))
+                {
+                    connection.Open();
+                    var result = await connection.ExecuteAsync(sql, command);
+                    return result;
+                }
+
             }
         }
     }
