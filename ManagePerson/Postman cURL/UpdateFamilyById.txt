@@ -1,0 +1,6 @@
+﻿curl --location --request POST 'https://localhost:7132/api/person/updatefamily' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "personId":"1B2F6401-63CC-402B-A4D4-08D82CCD102E",
+    "family":"Yassin"
+}'

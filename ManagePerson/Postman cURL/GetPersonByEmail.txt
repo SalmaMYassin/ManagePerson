@@ -1,0 +1,1 @@
+﻿curl --location --request GET 'https://localhost:7132/person/reddy@yopmail.com'
