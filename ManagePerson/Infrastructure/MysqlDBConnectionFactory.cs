@@ -1,7 +1,7 @@
 ﻿using System.Data;
 using MySql.Data.MySqlClient;
 
-namespace ManagePerson.Common
+namespace ManagePerson.Infrastructure
 {
     public class MysqlDbConnectionFactory : IDbConnectionFactory
     {
